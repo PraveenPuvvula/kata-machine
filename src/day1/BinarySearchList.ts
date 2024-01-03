@@ -17,6 +17,5 @@ export default function bs_list(haystack: number[], needle: number): boolean {
             low = midpoint + 1;
         }
     } while (low < high);
-
     return false;
 }
