@@ -5,6 +5,7 @@ export default function two_crystal_balls(breaks: boolean[]): number {
     // sqrt will be O(sqrt N) which is more optimized than O(n) or O(log N)
     // rather than traversing every element, we traverse the sqrt so i should be sqrt
     // if a specific sqrt matches then we walk back to the array sqrt number of times (j)
+    // cbrt is worse than sqrt because the higher the root, the higher the chances of the value being closer to 1 hence it gets closer and closer to linear
     const jumpAmount = Math.floor(Math.sqrt(breaks.length));
     // in this loop, we are traversing the length by sqrt number of times
     // if ball breaks, that is if (breaks[i]) then we're breaking and jumping to second for
